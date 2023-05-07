@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx_tarea.VentanaNombre">
+   <children>
+      <Button fx:id="Boton" layoutX="259.0" layoutY="189.0" mnemonicParsing="false" onAction="#botonClick" text="HAZ CLIK">
+         <font>
+            <Font name="Bodoni MT Black" size="12.0" />
+         </font></Button>
+      <TextField fx:id="cajatexto" layoutX="226.0" layoutY="146.0" />
+      <Label fx:id="Etiqueta" contentDisplay="CENTER" layoutX="226.0" layoutY="106.0" prefHeight="17.0" prefWidth="149.0" text="INGRESE NOMBRE">
+         <font>
+            <Font name="Georgia Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Mostrar" alignment="CENTER" layoutX="210.0" layoutY="269.0" prefHeight="17.0" prefWidth="183.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
